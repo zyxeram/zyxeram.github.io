@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		body {
+			padding: 5rem;
+			font-size: 24px;
+			font-family: 'Poppins', sans-serif;
+			background: black;
+			color: white;
+			display: grid;
+			grid-template-columns: 80% 20%;
+			animation: break 6s ease-in-out forwards;
+		}
+		header {
+			text-align: center;
+			grid-row: 1;
+			grid-column: 1/3;
+		}
+		main {
+			grid-row: 2;
+			grid-column: 1;
+			padding: 1rem;
+		}
+		aside {
+			grid-row: 2;
+			grid-column: 2;
+			background-color: #333;
+			padding: 2rem;
+		}
+		#boom {
+			position: absolute;
+			top: 20%;
+			right: 20%;
+			width: 200px;
+			height: 200px;
+			background-size: cover;
+			animation: crash 6s linear;
+		}
+		@keyframes crash {
+			0% {
+				translate: -100vw;
+				background-image: url(https://media.tenor.com/drWv4iU-AKAAAAAi/la5e-moon.gif);
+			}
+			49% {
+				background-image: url(https://media.tenor.com/drWv4iU-AKAAAAAi/la5e-moon.gif);
+			}
+			50% {
+				translate: 0;
+				background: url(https://media.tenor.com/ptNG8DQFPD4AAAAi/explotion-explode.gif);
+			}
+			60% {
+				background: url(https://media.tenor.com/ptNG8DQFPD4AAAAi/explotion-explode.gif);
+			}
+
+
+		}
+		@keyframes break {
+			50% {
+				rotate: 0deg;
+				color: white;
+			}
+			52% {
+				rotate: 1deg;
+				color: red;
+			}
+			54% {
+				rotate: -1deg;
+				color: red;
+			}
+			56% {
+				rotate: 2deg;
+				color: white;
+			}
+			58% {
+				rotate: -2deg;
+				color: red;
+			}
+			60% {
+				rotate: 6deg;
+				color: white;
+			}
+			100% {
+				rotate: 6deg;
+			}
+			
+			
+			
+		}
+	</style>	
+</head>
+<body>
+	<header>
+		<h1>Hi, Bro!</h1>
+	</header>
+	<main>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum beatae aperiam obcaecati doloremque pariatur cupiditate necessitatibus inventore sapiente. Laboriosam dolore velit, veritatis sed non provident sit perferendis, cumque illum. Dolores.</p>
+	</main>
+	<aside>
+		<ul>
+			<li>Home</li>
+		</ul>
+	</aside>
+	<div id="boom"></div>
+</body>
+</html>
