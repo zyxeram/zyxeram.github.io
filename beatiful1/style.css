@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Poppins:wght@400;500;700&display=swap");
+	
+	* {
+  font-family: "Epilogue", sans-serif;
+	}
+	body {
+		font-size: 18px;
+	}
+
+	.logo {
+  font-size: 1.6rem;
+	}
+
+	
+	nav, .cta-btns, .menu-items {
+  	display: flex;
+  	align-items: center;
+		}	
+		li {
+  		list-style: none;
+		}
+		nav {
+			  margin: 0 1.6rem 1.6rem 1.6rem;
+			  justify-content: space-between;
+			}
+
+			.logos-section {
+			  display: flex;
+			}
+
+			
+		.menu-items li,	.cta-btns li {
+			  font-size: 0.7rem;
+			  margin-right: 1rem;
+			  color: hsl(0, 0%, 44%);
+			}
+
+			.cta-btns li:nth-last-child(1) {
+			  border: 1.3px solid black;
+			  padding: 0.3rem 0.6rem;
+			  border-radius: 0.3rem;
+			}
+					.clients-logos img {
+				  width: 5rem;
+				  margin-right: 1rem;
+				}
+
+				.clients-logos {
+				  margin-top: 4rem;
+				}
+
+				.clients-logos img:nth-child(2) {
+				  width: 3rem;
+				}
+
+				main h1 {
+				  font-size: 3rem;
+				}
+
+				main p {
+				  font-size: 0.7rem;
+				  width: 18rem;
+				  color: hsl(0, 0%, 41%);
+				  line-height: 0.9rem;
+				}
+
+				main button {
+				  background-color: hsl(0, 0%, 8%);
+				  color: #fff;
+				  border: none;
+				  font-size: 0.7rem;
+				  padding: 0.6rem 1rem;
+				  border-radius: 0.4rem;
+				  margin-top: 1rem;
+				}
+
+				#text-side {
+				  margin-top: 3rem;
+				}
+				.img-side img {
+				  width: 21rem;
+				}
+				main {
+			  display: grid;
+			  grid-template-columns: repeat(2, 1fr);
+			  height: 70vh;
+			  align-items: center;
+			  justify-content: center;
+			  margin-left: 8rem;
+			}
