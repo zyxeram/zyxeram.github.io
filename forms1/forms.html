@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			width: 300px;
+		}
+		textarea {
+			resize: vertical;
+		}
+		input:focus {
+			outline: 2px dashed red;
+		}
+		input {
+		border: none;
+		border-bottom: 2px solid black;
+		}
+	</style>
+</head>
+<body>
+	<form action="#">
+		<label for="email">Почта:</label>
+		<input id="email" name="email" autocomplete="on" type="email" placeholder="email@gmail.com" />
+
+		<label for="password">Пароль:</label>
+		<input type="password" name="password" type="password">
+		<label for="success">
+			<input id="success"type="checkbox">
+			Я согласен с пользовательским соглашением
+		</label>
+		<textarea name="textarea" id="" rows="10">
+			Просто текст
+		</textarea>
+		<select>
+			<option>Пункт 1</option>
+			<option>Пункт 2</option>
+			<option>Пункт 3</option>
+			<option>Пункт 4</option>
+		</select>
+		<details>
+		<summary>Детали</summary>
+		Lorem ipsum dolor sit amet consectetur adipisicing, elit. Enim possimus incidunt neque architecto necessitatibus, qui, atque, tenetur mollitia, adipisci laboriosam consequuntur. Voluptate quod dolore eligendi tempora vitae aliquid officia voluptatem.
+	</details>
+	<button type="submit">Send</button>
+	</form>
+	<form
+  action="https://formspree.io/f/xjvznlwd"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+</body>
+</html>
